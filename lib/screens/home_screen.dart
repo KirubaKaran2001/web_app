@@ -1,9 +1,6 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class WebApp extends StatefulWidget {
@@ -85,7 +82,6 @@ class _WebAppState extends State<WebApp> {
     await launch(whatsAppUrl);
   }
 
-  launchCall() {}
   void _launchEmailURL() async {
     final Uri params = Uri(
       scheme: 'mailto',
